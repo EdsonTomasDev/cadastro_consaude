@@ -1,0 +1,28 @@
+<html>
+ <head>
+  <title>Testando</title>
+  <meta charset="utf-8">    
+ </head>
+ <body>
+    <h1>Contador de caracteres</h1>
+
+    <form name="form_main">
+      <fieldset>
+        <legend>Contador</legend>
+        <label for="text">Texto:</label> <br>
+        <textarea name="text" id="text" cols="30" rows="10" maxlength="10" oninput="countText()">
+        </textarea><br>
+        <label for="characters">Caracteres: </label>
+        <span id="characters"></span><br>
+     
+      </fieldset>
+    </form>
+   <script>
+    function countText() {
+        let text = document.form_main.text.value;
+        document.getElementById('characters').innerText = text.length;
+      
+        }
+   </script>
+ </body>
+</html>

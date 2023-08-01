@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+
+#logotitulo{
+    background: #3A93D2;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-family: Roboto, Arial, "Droid Sans", Helvetica, Sans-serif;
+    font-size: 1.3em;
+}
+
+#logotitulo a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Roboto, Arial, "Droid Sans", Helvetica, Sans-serif;
+    font-size: 1.3em;
+    margin-left: 20px;
+    margin-right: 30px;
+}
+
+#conteudo{
+    background: #f0f0f0;
+    padding-top: 150px;
+}
+
+#conteudo{
+    height: 92vh;
+}
+
+
+@media (max-width: 765px){
+    #logotitulo{
+        background: #3A93D2;
+        height: 8vh;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        color: #fff;
+        font-family: Roboto, Arial, "Droid Sans", Helvetica, Sans-serif;
+        font-size: 1.3em;
+    }
+}

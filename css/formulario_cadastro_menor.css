@@ -1,0 +1,409 @@
+@media (max-width: 765px){
+    
+    #descricao_individual{
+        border-top: 1px solid #495057;
+        background: #f0f0f0;
+        
+    }
+    
+    .formdescricao{
+        width: 85vw;
+        margin: 0 auto;
+        margin-top: 10px;
+        padding-bottom: 10px;
+               
+    }
+    
+    #campo_1, #campo_2{
+        font-family: Roboto, Arial, "Droid Sans", Helvetica, Sans-serif;
+        font-size: 0.9em; 
+        font-weight: bold;
+        padding: 15px;
+        background: #ffffffb4;
+        border: 1px solid #ccc;
+        
+    }
+    
+    #campo_2{
+        margin-top: 10px;
+    }
+    
+    #campo_1 input{
+        font-family: Roboto, Arial, "Droid Sans", Helvetica, Sans-serif;
+        font-size: 0.9em;   
+        color: black;   
+        border-radius: 5px;
+        padding: 5px 5px;
+        margin-left: 0;
+        margin-right: 0;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+    
+    #campo_2 input{
+        font-family: Roboto, Arial, "Droid Sans", Helvetica, Sans-serif;
+        font-size: 0.9em;   
+        color: black;  
+        border-radius: 5px;
+        padding: 5px 5px;
+        margin-left: 0;
+        margin-right: 0;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+    
+    #campo_1 select{
+        font-family: Roboto, Arial, "Droid Sans", Helvetica, Sans-serif;
+        font-size: 1.0em;   
+        color: black;  
+        border-radius: 5px;
+        padding: 5px 5px;
+        margin-left: 0;
+        margin-right: 0;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+    
+       
+    #campo_1 label{
+        font-family: Roboto, Arial, "Droid Sans", Helvetica, Sans-serif;
+        font-size: 0.9em;
+       
+    }
+    
+    #campo_1 textarea{
+        font-family: Roboto, Arial, "Droid Sans", Helvetica, Sans-serif;
+        font-size: 0.9em;
+        padding: 5px 10px;
+        border: 1px solid #ccc;   
+        
+    }
+    
+    #campo_1 textarea::placeholder{
+        font-family: Roboto, Arial, "Droid Sans", Helvetica, Sans-serif;
+        font-size: 0.9em;
+        color: #155f9b;
+        text-align: justify;
+           
+    }
+    
+       /* Altera a cor da borda das inputs quando clicada */
+       input[type=text]:focus {
+        outline: 2px solid #3A93D2;
+        outline-offset: -2px;
+        box-shadow: 0 0 8px #3A93D2;
+    }
+    input[type=email]:focus {
+        outline: 2px solid #3A93D2;
+        outline-offset: -2px;
+        box-shadow: 0 0 8px #3A93D2;
+    }
+    
+      /* Altera a cor da borda das inputs quando clicada */
+      #estado:focus {
+        outline: 2px solid #3A93D2;
+        outline-offset: -2px;
+        box-shadow: 0 0 8px #3A93D2;
+    }
+    
+    #civil:focus {
+        outline: 2px solid #3A93D2;
+        outline-offset: -2px;
+        box-shadow: 0 0 8px #3A93D2;
+    }
+    
+    #raca:focus {
+        outline: 2px solid #3A93D2;
+        outline-offset: -2px;
+        box-shadow: 0 0 8px #3A93D2;
+    }
+    
+    #instrucao:focus {
+        outline: 2px solid #3A93D2;
+        outline-offset: -2px;
+        box-shadow: 0 0 8px #3A93D2;
+    }
+    
+    /* CAMPOS DE TEXTO MATRÍCULA E NOME */
+    
+    
+    
+    
+    .dados_matricula, .dados_nome, .dados2_endereco, .dados2_numero, .dados3_bairro, .dados3_cidade, .dados4_estado, .dados4_cep, .dados4_celular, .dados5_tel, .dados5_rg, .dados5_cpf, .dados6_email, .dados6_raca, .dados6_civil, .dados7_intrucao, .dados7_descrinstrucao{
+        display: flex;
+        flex-direction: column;
+        color: #495057;
+    }
+    
+    .dados_matricula{
+        width: 100%;
+        
+    }
+    
+    .dados_nome{
+        width: 100%;
+        margin-top: 5px;
+    }
+    .dados_matricula input{
+        width: 100%;
+        
+    }
+    .dados_nome input{
+        width: 100%;
+        
+    }
+    
+    /* CAMPOS DE TEXTO MATRÍCULA E NOME */
+    
+   .dados2_endereco, .dados2_numero{
+        margin-top: 5px;
+        width: 100%;
+        
+    }
+    
+    
+    .dados2_endereco input{
+        width: 100%;
+        
+    }
+    .dados2_numero input{
+        width: 100%;
+        
+    }
+    
+    /* CAMPOS DE TEXTO BAIRRO CIDADE */
+    .dados3_bairro, .dados3_cidade{
+        margin-top: 5px;
+        width: 100%;
+        
+    }
+    
+      
+    .dados3_bairro input{
+        width: 100%;
+        
+    }
+    
+    .dados3_cidade input{
+        width: 100%;
+        
+    }
+    
+    /* CAMPOS DE TEXTO UF CEP TELCELULAR */
+    
+    
+    .dados4_estado,   .dados4_cep, .dados4_celular {
+        margin-top: 5px;
+        width: 100%;
+        
+    }
+    
+        
+    .dados4_estado select{
+        width: 100%;
+        
+    }
+    
+    .dados4_cep input{
+        width: 100%;
+        
+    }
+    
+    .dados4_celular input{
+        width: 100%;
+        
+    }
+    
+    /* CAMPOS DE TEXTO TEL RG CPF */
+    
+    .dados5_tel, .dados5_rg,  .dados5_cpf{
+        width: 100%;
+        margin-top: 5px;
+        
+    }
+   
+    
+    .dados5_tel input{
+        width: 100%;
+       
+    }
+    
+    .dados5_rg input{
+        width: 100%;
+       
+        
+    }
+    
+    .dados5_cpf input{
+        width: 100%;
+     
+       
+    }
+    
+    /* CAMPOS DE TEXTO ESTADO CIVIL RAÇA/COR E-MAIL */
+    
+    .dados6_civil, .dados6_raca, .dados6_email{
+        width: 100%;
+        margin-top: 5px;
+             
+    }
+    
+       
+    .dados6_civil select{
+        width: 100%;
+        
+    }
+    
+    .dados6_raca select{
+        width: 100%;
+       
+    }
+    
+    .dados6_email input{
+        width: 100%;
+        
+    }
+
+
+    
+    /* CAMPOS DE TEXTO GRAU DE INSTRUÇÃO */
+ 
+    
+    .dados7_intrucao{
+        width: 100%;
+        margin-top: 10px;
+       
+       
+    }
+    
+    .dados7_descrinstrucao{
+        width: 100%;
+        margin-top: 5px;
+       
+       
+    }
+    
+    .dados7_intrucao select{
+        width: 100%;
+       
+    }
+    
+    .dados7_descrinstrucao input{
+        width: 100%;
+        
+    }
+    #cor_grau{
+        color: rgba(255, 0, 0, 0.568);
+        
+    }
+    
+    /* RADIO BUTTON VINCULO EMPREGATÍCIO */
+      
+    .dados8_simnao{
+        display: flex;
+        flex-direction: column;
+        border: 1px solid blue;
+        width: 100%;
+        justify-content: center;
+        padding-left: 10px;
+        padding-top: 5px;
+        padding-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+    }
+    .dados8_simnao-pergunta{
+        color: #495057;
+        margin-bottom: 5px;
+        font-size: 0.9em;
+    }
+    .dados8_sim{
+       display: flex;
+       align-items: center;
+       margin-top: 10px;
+       font-size: 0.9em;
+       padding: 3px;
+    }
+    .dados8_nao{
+       display: flex;
+       align-items: center;
+       margin-top: 10px;
+       font-size: 0.9em;
+       padding: 3px;
+    }
+    
+    
+    #dados_label-sim, #dados_label-nao {
+        color: #495057;
+        font-family: Roboto, Arial, "Droid Sans", Helvetica, Sans-serif;
+        font-size: 0.9em;
+        margin-left: 3px;
+    }
+    
+    .dado8_vinculo{
+        margin-top: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+    }
+    .dados8_vinculo-empresa{
+        display: flex;
+        flex-direction: column;
+        margin-top: 3px;
+        
+    }
+    
+    .dados8_vinculo-empresa input{
+        width: 100%;
+    }
+    .dados8_vinculo-empresa label{
+        color: rgba(255, 0, 0, 0.568);
+        font-size: 0.9em;
+    }
+    
+    .dados8_vinculo-funcao{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        margin-bottom: 3px;
+    }
+    
+    .dados8_vinculo-funcao input{
+        width: 100%;
+    }
+    
+    .dados8_vinculo-funcao label{
+        color: rgba(255, 0, 0, 0.568);
+        font-size: 0.9em;
+    }
+    
+    .verdadeiro{
+        margin-top: 5px;
+       padding: 5px;
+       font-size: 0.9em;
+    }
+    
+    #campo_2 button {
+        background-color: #155f9b;
+        color: white;
+        padding: 10px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        border-radius: 5px;
+        font-family: Roboto, Arial, "Droid Sans", Helvetica, Sans-serif;
+        font-size: 1.0em;
+      }
+    
+      #campo_2 button:hover {
+        opacity: 0.8;
+      }
+    
+
+    }
+    

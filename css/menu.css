@@ -1,0 +1,32 @@
+body{
+	background: #f0f0f0;
+}
+#menu{
+	
+	
+}
+
+.barra_logo{
+	background: #3A93D2;
+	height: 100%;
+	margin: 0px;
+	
+	
+
+
+}
+#logo{
+	background: #3A93D2;
+	padding: 0px;
+	margin: 0px;
+	height: 70px;
+	
+
+}
+
+#menu h4{
+	color: #fff8f1;
+	font-family: Roboto, Arial, "Droid Sans", Helvetica, Sans-serif;
+	
+}
+

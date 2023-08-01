@@ -1,0 +1,92 @@
+/* ESTILO DO FORMULÁRIO */
+.formulario{
+    padding: 15px;
+    border: 2px solid #dfdfdf;
+    width: 400px;
+    margin: 0 auto;
+	background: #fff;
+	border-radius: 5px;
+	
+}
+
+
+.formulario h4{
+	font-family: Roboto, Arial, "Droid Sans", Helvetica, Sans-serif;
+	font-size: 1.1em;
+	color: #3A93D2;
+	
+}
+
+label{
+	color: #495057;
+}
+
+.titulo-form{
+	text-align: center;
+}
+  
+  /* Full-width inputs */
+  input[type=text], input[type=password] {
+	width: 100%;
+	border-radius: 5px;
+	padding: 12px 10px;
+	margin-top: 2px;
+	margin-bottom: 8px;
+	margin-left: 0;
+	margin-right: 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+  }
+
+   /* Altera a cor da borda das inputs quando clicada */
+  input[type=text]:focus {
+	outline: 2px solid #3A93D2;
+	outline-offset: -2px;
+	box-shadow: 0 0 8px #3A93D2;
+}
+
+
+input[type=password]:focus {
+	outline: 2px solid #3A93D2;
+	outline-offset: -2px;
+	box-shadow: 0 0 8px #3A93D2;
+}
+  
+  /* Set a style for all buttons */
+  button {
+	background-color: #155f9b;
+	color: white;
+	padding: 10px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	border-radius: 5px;
+	font-family: Roboto, Arial, "Droid Sans", Helvetica, Sans-serif;
+	font-size: 1.2em;
+  }
+  
+  /* Add a hover effect for buttons */
+  button:hover {
+	opacity: 0.8;
+  }
+
+  .form-text{
+	font-family: Roboto, Arial, "Droid Sans", Helvetica, Sans-serif;
+	font-size: 0.8em;
+  }
+  
+     
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+
+	
+  }
+
+  @media (max-width: 765px){
+	.formulario{
+		width: 300px;
+		
+	}
+}

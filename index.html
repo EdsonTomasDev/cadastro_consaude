@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="css/formulario_cadastro.css">
+    
+    
+
+    <script src="js/formulario_cadastro.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+
+    <section id="descricao_individual">
+            
+      
+              <div class="formdescricao">
+
+                      <form name="form_main" method="post" action="../gravar_atualizacao.php?matricula=<?php echo $matricula_oculta.'&' ?>">
+                          <fieldset id="campo_1">
+                              <legend>Dados Pessoais:</legend>
+
+                                <!-- MATRÍCULA NOME-->
+                            <div class="dados">
+
+                                <div class="dados_matricula">
+
+                                    <label for="matricula"><b>Matrícula:</b></label>
+                                    <input id="matricula" type="text" name="matricula" readonly>
+
+                                </div>
+
+                                <div class="dados_nome-func">
+                                    <label for="nome"><b>Nome:</b></label>
+                                    <input id="nome" type="text" name="nome" required>
+                                </div>
+
+                             
+                            </div>
+
+                            <!-- ENDEREÇO NÚMERO-->
+
+                            <div class="dados2">
+
+                                <div class="dados2_endereco">
+
+                                    <label for="endereco"><b>Endereço (rua, avenida etc.):</b></label>
+                                    <input id="endereco" type="text" name="endereco" required>
+
+                                </div>
+
+                                <div class="dados2_numero">
+                                    <label for="numero"><b>Número:</b></label>
+                                    <input id="numero" type="text" name="numero" required>
+                                </div>
+
+                             
+                            </div>
+
+                              <!-- BAIRRO CIDADE -->
+                            <div class="dados3">
+
+                                <div class="dados3_bairro">
+
+                                    <label for="bairro"><b>Bairro:</b></label>
+                                    <input id="bairro" type="text" name="bairro" required>
+
+                                </div>
+
+                                <div class="dados3_cidade">
+                                    <label for="cidade"><b>Cidade:</b></label>
+                                    <input id="cidade" type="text" name="cidade" required>
+                                </div>
+
+                             
+                            </div>
+
+                                  <!-- ESTADO CEP TELEFONE CELULAR -->
+                                  <div class="dados4">
+
+                                            <div class="dados4_estado">
+            
+                                                <label for="estado">UF:</label>
+
+                                                <select name="estado" id="estado">
+                                                    <option value="">Selecione</option>
+                                                    <option value="AC">Acre</option>
+                                                    <option value="AL">Alagoas</option>
+                                                    <option value="AP">Amapá</option>
+                                                    <option value="AM">Amazonas</option>
+                                                    <option value="BA">Bahia</option>
+                                                    <option value="CE">Ceará</option>
+                                                    <option value="DF">Distrito Federal</option>
+                                                    <option value="ES">Espirito Santo</option>
+                                                    <option value="GO">Goiás</option>
+                                                    <option value="MA">Maranhão</option>
+                                                    <option value="MS">Mato Grosso do Sul</option>
+                                                    <option value="MT">Mato Grosso</option>
+                                                    <option value="MG">Minas Gerais</option>
+                                                    <option value="PA">Pará</option>
+                                                    <option value="PB">Paraíba</option>
+                                                    <option value="PR">Paraná</option>
+                                                    <option value="PE">Pernambuco</option>
+                                                    <option value="PI">Piauí</option>
+                                                    <option value="RJ">Rio de Janeiro</option>
+                                                    <option value="RN">Rio Grande do Norte</option>
+                                                    <option value="RS">Rio Grande do Sul</option>
+                                                    <option value="RO">Rondônia</option>
+                                                    <option value="RR">Roraima</option>
+                                                    <option value="SC">Santa Catarina</option>
+                                                    <option value="SP">São Paulo</option>
+                                                    <option value="SE">Sergipe</option>
+                                                    <option value="TO">Tocantins</option>
+                                                </select>
+            
+                                            </div>
+    
+                                            <div class="dados4_cep">
+                                                <label for="cep"><b>CEP:</b></label>
+                                                <input id="cep" type="text" name="cep" required>
+                                            </div>
+
+                                            <div class="dados4_celular">
+                                                <label for="celular"><b>Tel. Celular:</b></label>
+                                                <input id="celular" type="text" name="celular" required>
+                                            </div>
+    
+                                 
+                                  </div>
+
+                                   <!-- TELEFONE FIXO RG CPF -->
+                                   <div class="dados5">
+
+                                            <div class="dados5_tel">
+                                                <label for="tel"><b>Tel. Residêncial:</b></label>
+                                                <input id="tel" type="text" name="tel">
+                                            </div>
+                                                 <!-- DADOS5 RG -->
+                                            <div class="dados5_civil">
+                                                <label for="civil">Estado Civil:</label>
+
+                                                <select name="civil" id="civil">
+                                                <option value="solteiro">Solteiro</option>
+                                                <option value="casado">Casado</option>
+                                                <option value="desquitado">Desquitado</option>
+                                                <option value="divorciado">Divorciado</option>
+                                                <option value="separado">Separado</option>
+                                                <option value="viuvo">Viuvo</option>
+                                                <option value="uniaoestavel">União Estável</option>
+                                                <option value="amasiado">Amasiado</option>
+                                                </select>
+                                            </div>
+                                                 <!-- DADOS5 CPF -->
+                                            <div class="dados5_raca">
+                                                
+                                                <label for="raca">Raça/Cor:</label>
+
+                                                <select name="raca" id="raca">
+                                                <option value="indigena">Indigena</option>
+                                                <option value="branca">Branca</option>
+                                                <option value="negra">Negra/Preta</option>
+                                                <option value="amarela">amarela</option>
+                                                <option value="parda">Parda</option>
+                                               
+                                                </select>
+
+
+                                            </div>
+
+                         
+                                    </div>
+
+                                       <!-- Estado Civil Raça/Cor E-mail -->
+                                   <div class="dados6">
+
+                                          
+                                            <div class="dados6_email">
+                                                <label for="email"><b>E-mail:</b></label>
+                                                <input id="email" type="email" name="email" required>
+                                            </div>
+
+                 
+                                    </div>
+
+                                         <!-- GRAU DE INSTRUÇÃO -->
+                                   <div class="dados7">
+
+                                    <div class="dados7_intrucao">
+                                        <label for="instrucao">Grau de Instrução:</label>
+
+                                        <select name="instrucao" id="instrucao" onchange="colocaConteudo(this)">
+                                        <option value="4serieincompleto">Até a 4ª série incompleta do 1º grau</option>
+                                        <option value="4seriecompleto">Com a 4ª série completa do 1º grau</option>
+                                        <option value="5a8serie">Da 5ª a 8ª série do 1º grau</option>
+                                        <option value="1grau">Primeiro grau completo</option>
+                                        <option value="2grauincompleto">Segundo grau incompleto</option>
+                                        <option value="2graucompleto">Segundo grau completo</option>
+                                        <option value="tecnico">Ensino Técnico</option>
+                                        <option value="superiorincompleto">Superior incompleto</option>
+                                        <option value="superiorcompleto">Superior completo</option>
+                                        <option value="posgraduado">Pós-graduado</option>
+                                        <option value="especializacao">Especialização</option>
+                                        <option value="mestrado">Mestrado</option>
+                                        <option value="doutourado">Doutourado</option>
+                                        <option value="posdoutourado">Pós Doutorado</option>
+                                        </select>
+                                    </div>
+
+                                            
+
+                                    <div class="dados7_descrinstrucao" id="dados7_descrinstrucao">
+                                       <!--
+                                        <label for="descrinstrucao" id="cor_grau"><b>Informe a(s) Especialidade(s):</b></label>
+                                        <textarea name="descrinstrucao" id="descrinstrucao"  rows="2" required maxlength="100" oninput="countText()"></textarea>
+                                        <label for="characters" id="caracteres">Caracteres máx: <span id="characters"></span></label>
+                                        -->
+                                    </div>
+                                   
+         
+                            </div>
+                           
+                         
+
+                            
+                                  
+                            
+                          </fieldset>
+
+                          <fieldset id="campo_2">
+                                    <legend>Dados Vínculo Empregatício:</legend>
+
+                                            <!-- VINCULOS EMPREGATICIO-->
+
+                                            <div class="dados8">
+                                            
+                                                <div class="dados8_simnao">
+                                                    <label class="dados8_simnao-pergunta"><b>Possui outro vículo Empregatício?</b></label>
+                                                        <div class="dados8_sim">
+                                                            
+                                                            <input type="radio" name="sim_nao" value="Sim" required id="dados8_simnao-sim" onclick="coloca_Conteudo()"><label for="dados8_simnao-sim" id="dados_label-sim">Sim</label>
+                                                        </div>
+                                                        <div class="dados8_nao">
+                                                            <input type="radio" name="sim_nao" value="Nao" required id="dados8_simnao-nao" onclick="retira_Conteudo()"><label for="dados8_simnao-nao" id="dados_label-nao">Não</label>
+                                                        </div>
+                                                    
+
+                                                </div>
+
+                                                <div class="dado8_vinculo" id="vinculo_oculto">
+                                                <!-- <div class="dados8_vinculo-empresa">
+                                                        <label for="empresa"><b>Informe o nome da empresa/Prefeitura:</b></label>
+                                                        <input id="empresa" type="text" name="empresa" required>
+                                                    </div>
+                                                    <div class="dados8_vinculo-funcao">
+                                                        <label for="empresa_funcao"><b>Informe o nome do cargo/função:</b></label>
+                                                        <input id="empresa_funcao" type="text" name="empresa_funcao" required>
+                                                    </div>
+                                                    -->
+                                                </div>
+
+                                            
+                                            </div>
+
+                                            <div class="verdadeiro">
+                                                <input type="checkbox" name="verdadeiro" id="verdadeiro" required>
+                                                <label for="dados8_simnao-sim" id="dados_label-sim">Declaro que são verdadeiras as informações.</label>
+                                            </div>
+
+                                            <button type="submit">Clique aqui para gravar</button>
+
+                           </fieldset>
+
+                       
+
+                      </form>
+
+                      <script>
+                        function countText() {
+                            let text = document.form_main.descrinstrucao.value;
+                            document.getElementById('characters').innerText = 100-text.length;
+                          
+                            }
+                       </script>
+
+            </div>
+
+</section>
+    
+</body>
+</html>

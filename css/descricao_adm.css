@@ -1,0 +1,32 @@
+#conteudo_adm{
+    margin: 0;
+    padding: 0;
+    border: 1px solid blue;
+    background: #f0f0f0;
+    
+}
+
+.nome_chefia{
+    display: flex;
+    border: 1px solid red;
+    width: 360px;
+    margin-top: 10px;
+    margin-left: 80%;
+    
+
+}
+
+.nome_chefia h4{
+    font-family: Roboto, Arial, "Droid Sans", Helvetica, Sans-serif;
+	font-size: 1.0em;
+	color: #495057;
+}
+
+.nome_chefia a{
+    font-family: Roboto, Arial, "Droid Sans", Helvetica, Sans-serif;
+	font-size: 1.0em;
+    font-weight: bold;
+    margin-left: 30px;
+    color: blue;
+	
+}

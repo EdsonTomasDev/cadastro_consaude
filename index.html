@@ -192,22 +192,22 @@
 
                                     <div class="dados7_intrucao">
                                         <label for="instrucao">Grau de Instrução:</label>
-
-                                        <select name="instrucao" id="instrucao" onchange="colocaConteudo(this)">
-                                        <option value="4serieincompleto">Até a 4ª série incompleta do 1º grau</option>
-                                        <option value="4seriecompleto">Com a 4ª série completa do 1º grau</option>
-                                        <option value="5a8serie">Da 5ª a 8ª série do 1º grau</option>
-                                        <option value="1grau">Primeiro grau completo</option>
-                                        <option value="2grauincompleto">Segundo grau incompleto</option>
-                                        <option value="2graucompleto">Segundo grau completo</option>
-                                        <option value="tecnico">Ensino Técnico</option>
-                                        <option value="superiorincompleto">Superior incompleto</option>
-                                        <option value="superiorcompleto">Superior completo</option>
-                                        <option value="posgraduado">Pós-graduado</option>
-                                        <option value="especializacao">Especialização</option>
-                                        <option value="mestrado">Mestrado</option>
-                                        <option value="doutourado">Doutourado</option>
-                                        <option value="posdoutourado">Pós Doutorado</option>
+                                        <option value="">Selecione</option>
+                                            <select name="instrucao" id="instrucao" onchange="colocaConteudo(this)">
+                                            <option value="4serieincompleto">Até a 4ª série incompleta do 1º grau</option>
+                                            <option value="4seriecompleto">Com a 4ª série completa do 1º grau</option>
+                                            <option value="5a8serie">Da 5ª a 8ª série do 1º grau</option>
+                                            <option value="1grau">Primeiro grau completo</option>
+                                            <option value="2grauincompleto">Segundo grau incompleto</option>
+                                            <option value="2graucompleto">Segundo grau completo</option>
+                                            <option value="tecnico">Ensino Técnico</option>
+                                            <option value="superiorincompleto">Superior incompleto</option>
+                                            <option value="superiorcompleto">Superior completo</option>
+                                            <option value="posgraduado">Pós-graduado</option>
+                                            <option value="especializacao">Especialização</option>
+                                            <option value="mestrado">Mestrado</option>
+                                            <option value="doutourado">Doutourado</option>
+                                            <option value="posdoutourado">Pós Doutorado</option>
                                         </select>
                                     </div>
 
@@ -230,6 +230,42 @@
                                   
                             
                           </fieldset>
+
+                          <fieldset id="campo_3">
+                            <legend>Idiomas e Conhecimento Pacote Office:</legend>
+
+                                    <!-- IDIOMAS OFFICE-->
+                                    <div class="dados9">
+                                        <div class="dados9_idioma">
+                                            <label class="dados9_simnao-pergunta"><b>Possui outro Idioma?</b></label>
+                                            <input type="radio" name="simNao_idioma" value="Sim" required id="dados9_simnao-sim" onclick="colocaConteudo_idioma()"><label for="dados9_simnao-sim" id="dadoslabel_sim-idioma">Sim</label>
+                                            <input type="radio" name="simNao_idioma" value="Nao" required id="dados9_simnao-nao" onclick="retiraConteudo_idioma()"><label for="dados9_simnao-nao" id="dadoslabel_nao-idioma">Não</label>
+                                        </div>
+
+                                        <div class="dados9_idioma-idiomas">
+
+                                            <div class="dados9_idioma-ingles">
+                                                <input type="checkbox" name="ingles" id="daodos9_ingles"><label for="daodos9_ingles" id="dados9label_ingles">Inglês</label>
+                                            </div>
+                                            <div  class="dados9_idioma-espanhol">
+                                                <input type="checkbox" name="espanhol" id="daodos9_espanhol"><label for="daodos9_espanhol" id="dados9label_espanhol">Espanhol</label>
+                                            </div>
+                                            <div  class="dados9_idioma-outro">
+                                                <input type="checkbox" name="idiomaOutro" id="daodos9_idiomaOutro"><label for="daodos9_idiomaOutro" id="dados9label_idiomaOutro">Outro</label>
+                                                <input id="outro_idioma" type="text" name="outro_idioma" required>
+                                            </div>
+
+                                               
+
+                                        </div>
+
+                                    </div>
+                                    
+
+                                    
+                                   
+
+                        </fieldset>
 
                           <fieldset id="campo_2">
                                     <legend>Dados Vínculo Empregatício:</legend>

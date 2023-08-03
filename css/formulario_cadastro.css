@@ -451,7 +451,7 @@ input[type=email]:focus {
   /* /////////////////////////////////////////////////////////////////////////////////////*/
 /* ESTILO PARA QUANDO HOUVER REDUÇÃO DO TAMANHO DA TELA*/
 
-  @media (min-width: 900px){
+  @media (min-width: 1024px){
     
     #descricao_individual{
         border-top: 1px solid #495057;
@@ -880,24 +880,65 @@ input[type=email]:focus {
         color: #495057;
     }
     .dados9_idioma{
-        border: 1px solid green;
+        
     }
 
     .dados9_idioma-idiomas{
         display: flex;
-        flex-direction: column;
-        border: 1px solid red;
         font-family: Roboto, Arial, "Droid Sans", Helvetica, Sans-serif;
         font-size: 0.9em;
         color: #495057;
-        width: 45%;
+        width: 100%;
     }
-    .dados9_idioma-ingles, .dados9_idioma-espanhol, .dados9_idioma-outro{
+    .dados9_idioma-ingles{
         padding-top: 5px;
         padding-bottom: 5px;
+        border-bottom: 1px solid #ccc;
+        border-top: 1px solid #ccc;
+        border-left: 1px solid #ccc;
+        border-radius: 5px 0 0 5px;
+        width: 25%;
     }
 
-    .dados9_idioma-outro input{
+    .dados9_idioma-espanhol{
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border: 1px solid #ccc;
+        width: 25%;
+    }
+    
+    .dados9_idioma-outro{
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid #ccc;
+        border-top: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+        border-radius: 0 5px 5px 0;
+        width: 49%;
+    }
+    .dados9_idiomaOutro-descricao{
+        display: flex;
+        align-items: center;
+    }
+
+    .dados9_radioinglês{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .dados9_radioespanhol{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .dados9_radioouttros{
+        display: flex;
+        flex-direction: column;
+        margin-top: 12px;
+    }
+
+    #outro_idioma{
         font-family: Roboto, Arial, "Droid Sans", Helvetica, Sans-serif;
         font-size: 0.9em;   
         color: black;  
@@ -905,6 +946,8 @@ input[type=email]:focus {
         padding: 5px 5px;
         border: 1px solid #ccc;
         box-sizing: border-box;
+        width: 70%;
+        margin-left: 3px;
     }
     
     #campo_2 button {

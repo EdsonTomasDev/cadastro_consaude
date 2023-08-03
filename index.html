@@ -243,18 +243,70 @@
                                         </div>
 
                                         <div class="dados9_idioma-idiomas">
-
+                                             <!--INÍCIO IDIOMA INGLÊS-->   
                                             <div class="dados9_idioma-ingles">
-                                                <input type="checkbox" name="ingles" id="daodos9_ingles"><label for="daodos9_ingles" id="dados9label_ingles">Inglês</label>
-                                            </div>
-                                            <div  class="dados9_idioma-espanhol">
-                                                <input type="checkbox" name="espanhol" id="daodos9_espanhol"><label for="daodos9_espanhol" id="dados9label_espanhol">Espanhol</label>
-                                            </div>
-                                            <div  class="dados9_idioma-outro">
-                                                <input type="checkbox" name="idiomaOutro" id="daodos9_idiomaOutro"><label for="daodos9_idiomaOutro" id="dados9label_idiomaOutro">Outro</label>
-                                                <input id="outro_idioma" type="text" name="outro_idioma" required>
-                                            </div>
+                                                    <input type="checkbox" name="ingles" id="daodos9_ingles"><label for="daodos9_ingles" id="dados9label_ingles" onclick="colocaNivel_ingles()">Inglês</label>
+                                                    <div class="dados9_radioinglês">
+                                                        <label for="dados9_inglês-basico" id="dadoslabel_sim-idioma">
+                                                            <input type="radio" name="dados9_inglês" value="basico" required id="dados9_inglês-basico">Básico
+                                                        </label>
+                                                    
+                                                        <label for="dados9_inglês-intermediario" id="dadoslabel_nao-idioma">
+                                                            <input type="radio" name="dados9_inglês" value="intermediario" required id="dados9_inglês-intermediario">Intermediário
+                                                        </label>
 
+                                                        <label for="dados9_inglês-avancado" id="dadoslabel_nao-idioma">
+                                                            <input type="radio" name="dados9_inglês" value="avancado" required id="dados9_inglês-avancado">Avançado
+                                                        </label>
+                                                    </div>
+                                            </div>
+                                            <!--FIM IDIOMA INGLÊS-->
+
+                                              <!--INÍCIO IDIOMA ESPANHOL-->   
+                                            <div  class="dados9_idioma-espanhol">
+                                                    <input type="checkbox" name="espanhol" id="daodos9_espanhol"><label for="daodos9_espanhol" id="dados9label_espanhol" onclick="colocaNivel_espanhol()">Espanhol</label>
+                                                    <div class="dados9_radioespanhol">
+                                                        <label for="dados9_espanhol-basico" id="dadoslabel_sim-idioma">
+                                                            <input type="radio" name="dados9_espanhol" value="basico" required id="dados9_espanhol-basico">Básico
+                                                        </label>
+                                                    
+                                                        <label for="dados9_espanhol-intermediario" id="dadoslabel_nao-idioma">
+                                                            <input type="radio" name="dados9_espanhol" value="intermediario" required id="dados9_espanhol-intermediario">Intermediário
+                                                        </label>
+
+                                                        <label for="dados9_esoanhol-avancado" id="dadoslabel_nao-idioma">
+                                                            <input type="radio" name="dados9_espanhol" value="avancado" required id="dados9_espanhol-avancado">Avançado
+                                                        </label>
+                                                    </div>
+                                                                                                                                 
+                                            </div>
+                                            <!--FIM IDIOMA ESPANHOL-->
+
+                                            <!--INÍCIO IDIOMA OUTRO-->   
+                                            <div  class="dados9_idioma-outro">
+                                                <div class="dados9_idiomaOutro-descricao">
+                                                    <label for="daodos9_idiomaOutro" id="dados9label_idiomaOutro"></label>
+                                                    <input type="checkbox" name="idiomaOutro" id="daodos9_idiomaOutro">Outro
+                                                    </label>
+                                                    <input id="outro_idioma" type="text" name="outro_idioma" required>
+                                                </div>
+                                             
+
+                                                        <div class="dados9_radioouttros">
+                                                            <label for="dados9_outros-basico" id="dadoslabel_sim-idioma">
+                                                                <input type="radio" name="dados9_outros" value="basico" required id="dados9_outros-basico">Básico
+                                                            </label>
+                                                        
+                                                            <label for="dados9_outros-intermediario" id="dadoslabel_nao-idioma">
+                                                                <input type="radio" name="dados9_outros" value="intermediario" required id="dados9_outros-intermediario">Intermediário
+                                                            </label>
+
+                                                            <label for="dados9_outros-avancado" id="dadoslabel_nao-idioma">
+                                                                <input type="radio" name="dados9_outros" value="avancado" required id="dados9_outros-avancado">Avançado
+                                                            </label>
+                                                        </div>
+                                            </div>
+                                            <!--FIM IDIOMA OUTRO-->
                                                
 
                                         </div>

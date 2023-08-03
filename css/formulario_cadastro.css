@@ -898,6 +898,7 @@ input[type=email]:focus {
         border-left: 1px solid #ccc;
         border-radius: 5px 0 0 5px;
         width: 25%;
+        
     }
 
     .dados9_idioma-espanhol{
@@ -916,27 +917,50 @@ input[type=email]:focus {
         border-radius: 0 5px 5px 0;
         width: 49%;
     }
-    .dados9_idiomaOutro-descricao{
-        display: flex;
-        align-items: center;
-    }
+  
 
     .dados9_radioinglês{
-        display: flex;
-        flex-direction: column;
-        margin-top: 20px;
+      
+        display: none;
     }
+/*EXIBIR MENU DE NÍVEL AO CLICAR NA CHECKBOX */
+#dados9_ingles:checked ~ .dados9_radioinglês {
+        
+    display: block;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+
     .dados9_radioespanhol{
-        display: flex;
-        flex-direction: column;
-        margin-top: 20px;
+        display: none;
     }
 
-    .dados9_radioouttros{
-        display: flex;
-        flex-direction: column;
-        margin-top: 12px;
+    /*EXIBIR MENU DE NÍVEL AO CLICAR NA CHECKBOX */
+#dados9_espanhol:checked ~ .dados9_radioespanhol {
+        
+    display: block;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.dados9_radioouttros{
+    display: none;
+   
+   
     }
+
+        /*EXIBIR MENU DE NÍVEL AO CLICAR NA CHECKBOX */
+#dados9_idiomaOutro:checked ~ .dados9_radioouttros {
+        
+    display: block;
+    display: flex;
+    flex-direction: column;
+    margin-top: 12px;
+}
+
 
     #outro_idioma{
         font-family: Roboto, Arial, "Droid Sans", Helvetica, Sans-serif;

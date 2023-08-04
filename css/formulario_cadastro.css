@@ -406,10 +406,93 @@ input[type=email]:focus {
    font-size: 0.9em;
 }
 
+.dados9{
+    border: 1px solid #ccc;
+    padding-top: 2px;
+    
+}
+.dados9_idioma{
+    margin-bottom: 5px;
+    
+}
+
+.dados9_idioma-idiomas1{
+    display: none;
+}
+
+.dados9_idioma-idiomas{
+        display: block;
+}
+
+#incluir_excluir{
+   /* display: none; */
+}
+
 .dados9_simnao-pergunta{
     font-family: Roboto, Arial, "Droid Sans", Helvetica, Sans-serif;
     font-size: 0.9em;
     color: #495057;
+    
+}
+
+.dados9_idioma-ingles{
+    border-top: 1px solid #ccc;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+.dados9_idioma-espanhol{
+    border-top: 1px solid #ccc;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+.dados9_idioma-outro{
+    border-top: 1px solid #ccc;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#dados9label_ingles, #dados9label_espanhol, #dados9label_idiomaOutro{
+    font-family: Roboto, Arial, "Droid Sans", Helvetica, Sans-serif;
+    font-size: 0.9em;
+    color: #495057;
+}
+
+.dados9_radioinglês{
+      
+    display: none;
+}
+/*EXIBIR MENU DE NÍVEL AO CLICAR NA CHECKBOX */
+#dados9_ingles:checked ~ .dados9_radioinglês {
+    
+display: block;
+padding-top: 5px;
+}
+
+
+.dados9_radioespanhol{
+    display: none;
+}
+
+/*EXIBIR MENU DE NÍVEL AO CLICAR NA CHECKBOX */
+#dados9_espanhol:checked ~ .dados9_radioespanhol {
+    display: block;
+    padding-top: 5px;
+}
+
+.dados9_radioouttros{
+    display: none;
+
+
+}
+
+    /*EXIBIR MENU DE NÍVEL AO CLICAR NA CHECKBOX */
+#dados9_idiomaOutro:checked ~ .dados9_radioouttros {
+    display: block;
+    padding-top: 5px;
 }
 
 #dadoslabel_sim-idioma, #dadoslabel_nao-idioma{
@@ -879,16 +962,25 @@ input[type=email]:focus {
         font-size: 0.9em;
         color: #495057;
     }
+    
     .dados9_idioma{
         
     }
 
+    .dados9_idioma-idiomas1{
+        display: none;
+    }
     .dados9_idioma-idiomas{
-        display: flex;
-        font-family: Roboto, Arial, "Droid Sans", Helvetica, Sans-serif;
-        font-size: 0.9em;
-        color: #495057;
-        width: 100%;
+            display: block;
+            display: flex;
+            font-family: Roboto, Arial, "Droid Sans", Helvetica, Sans-serif;
+            font-size: 0.9em;
+            color: #495057;
+            width: 100%;
+    }
+
+    #incluir_excluir{
+        
     }
     .dados9_idioma-ingles{
         padding-top: 5px;
@@ -929,7 +1021,8 @@ input[type=email]:focus {
     display: block;
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
+    margin-top: 10px;
+   
 }
 
 
@@ -943,7 +1036,8 @@ input[type=email]:focus {
     display: block;
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
+    margin-top: 10px;
+    
 }
 
 .dados9_radioouttros{
@@ -958,7 +1052,8 @@ input[type=email]:focus {
     display: block;
     display: flex;
     flex-direction: column;
-    margin-top: 12px;
+    margin-top: 2px;
+    
 }
 
 

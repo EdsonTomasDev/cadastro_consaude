@@ -23,5 +23,22 @@ function coloca_Conteudo() {
     }
 
     
+    function colocaConteudo_idioma(){
 
+        let el = document.querySelector('#incluir_excluir');
+      
+        el.classList.add("dados9_idioma-idiomas");
+    }
+    
+    
+    function retiraConteudo_idioma(){
 
+        let el = document.querySelector('#incluir_excluir');
+      
+        el.classList.remove("dados9_idioma-idiomas");
+           
+    }
+
+    
+    
+    

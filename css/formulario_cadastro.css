@@ -469,7 +469,8 @@ input[type=email]:focus {
 #dados9_ingles:checked ~ .dados9_radioinglês {
     
 display: block;
-padding-top: 5px;
+padding-top: 10px;
+padding-bottom: 5px;
 }
 
 
@@ -480,7 +481,8 @@ padding-top: 5px;
 /*EXIBIR MENU DE NÍVEL AO CLICAR NA CHECKBOX */
 #dados9_espanhol:checked ~ .dados9_radioespanhol {
     display: block;
-    padding-top: 5px;
+    padding-top: 10px;
+    padding-bottom: 5px;
 }
 
 .dados9_radioouttros{
@@ -492,7 +494,8 @@ padding-top: 5px;
     /*EXIBIR MENU DE NÍVEL AO CLICAR NA CHECKBOX */
 #dados9_idiomaOutro:checked ~ .dados9_radioouttros {
     display: block;
-    padding-top: 5px;
+    padding-top: 10px;
+    padding-bottom: 5px;
 }
 
 #dadoslabel_sim-idioma, #dadoslabel_nao-idioma{

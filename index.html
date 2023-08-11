@@ -232,7 +232,7 @@
                           </fieldset>
 
                           <fieldset id="campo_3">
-                            <legend>Idiomas e Conhec. Pacote Office:</legend>
+                            <legend>Idiomas:</legend>
 
                                     <!-- IDIOMAS OFFICE-->
                                     <div class="dados9">
@@ -308,13 +308,71 @@
                                                                 </div>
                                                     </div>
                                                     <!--FIM IDIOMA OUTRO-->
-                                               
+
+                                              
 
                                         </div>
 
+                                        <div class="dados10">
+                                            <!-- OFFICE-->
+                                            <div class="dados10_ofice">
+                                              <label class="dados10_simnao-pergunta"><b>Possui conhecimento Pacote Office: Word e Excel?</b></label>
+                                              <input type="radio" name="simNao_idioma" value="Sim" required id="dados10_simnao-sim" onclick="colocaConteudo_ofice()"><label for="dados10_simnao-sim" id="dadoslabel_sim-ofice">Sim</label>
+                                              <input type="radio" name="simNao_idioma" value="Nao" required id="dados10_simnao-nao" onclick="retiraConteudo_ofice()"><label for="dados10_simnao-nao" id="dadoslabel_nao-ofice">Não</label>
+                                            </div>
+
+                                            <div class="dados10_ofice-ofice1" id="incluir_excluir-ofice">
+
+                                                            <!--INÍCIO OFFICE WORD-->   
+                                                        <div class="dados10_ofice-word">
+                                                                <input type="checkbox" name="word" id="dados10_word"><label for="dados10_word" id="dados10label_word" >Word</label>
+                                                                <div class="dados10_radioword">
+                                                                    <label for="dados10_word-basico" id="dadoslabel_sim-word">
+                                                                        <input type="radio" name="dados10_word" value="basico" required id="dados10_word-basico">Básico
+                                                                    </label>
+                                                                
+                                                                    <label for="dados10_word-intermediario" id="dadoslabel_nao-word">
+                                                                        <input type="radio" name="dados10_word" value="intermediario" required id="dados10_word-intermediario">Intermediário
+                                                                    </label>
+
+                                                                    <label for="dados10_word-avancado" id="dadoslabel_nao-word">
+                                                                        <input type="radio" name="dados10_word" value="avancado" required id="dados10_word-avancado">Avançado
+                                                                    </label>
+                                                                </div>
+                                                        </div>
+                                                        <!--FIM OFFICE WORD--> 
+
+                                                            <!--INÍCIO OFFICE EXCEL-->   
+                                                        <div class="dados10_ofice-excel">
+                                                                    <input type="checkbox" name="excel" id="dados10_excel"><label for="dados10_excel" id="dados10label_excel" >Excel</label>
+                                                                    <div class="dados10_radioexcel">
+                                                                            <label for="dados10_excel-basico" id="dadoslabel_sim-excel">
+                                                                                <input type="radio" name="dados10_excel" value="basico" required id="dados10_excel-basico">Básico
+                                                                            </label>
+                                                                        
+                                                                            <label for="dados10_excel-intermediario" id="dadoslabel_nao-excel">
+                                                                                <input type="radio" name="dados10_excel" value="intermediario" required id="dados10_excel-intermediario">Intermediário
+                                                                            </label>
+
+                                                                            <label for="dados10_excel-avancado" id="dadoslabel_nao-excel">
+                                                                                <input type="radio" name="dados10_excel" value="avancado" required id="dados10_excel-avancado">Avançado
+                                                                            </label>
+                                                                    </div>
+                                                        </div>
+                                                        <!--FIM OFFICE EXCEL-->
+                                                
+                                            </div>
+
+                                          
+
+                                            
+
+                                        </div><!-- OFFICE-->
+
+
                                     </div>
                                     
-
+                                  
                                     
                                    
 

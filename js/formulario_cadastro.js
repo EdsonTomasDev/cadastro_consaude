@@ -39,6 +39,20 @@ function coloca_Conteudo() {
            
     }
 
+    function colocaConteudo_ofice(){
+
+        let el = document.querySelector('#incluir_excluir-ofice');
+      
+        el.classList.add("dados10_ofice-ofice");
+    }
     
+    
+    function retiraConteudo_ofice(){
+
+        let el = document.querySelector('#incluir_excluir-ofice');
+      
+        el.classList.remove("dados10_ofice-ofice");
+           
+    }
     
     

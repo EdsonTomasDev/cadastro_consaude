@@ -322,7 +322,7 @@ input[type=email]:focus {
     display: flex;
     flex-direction: column;
     border: 1px solid blue;
-    width: 100%;
+    width: 95%;
     justify-content: center;
     padding-left: 10px;
     padding-top: 5px;
@@ -364,7 +364,7 @@ input[type=email]:focus {
     padding-bottom: 5px;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 95%;
     padding: 5px;
     border: 1px solid #ccc;
     border-radius: 6px;
@@ -407,7 +407,7 @@ input[type=email]:focus {
 }
 
 .dados9{
-    border: 1px solid #ccc;
+   
     padding-top: 2px;
     
 }
@@ -437,6 +437,9 @@ input[type=email]:focus {
 
 .dados9_idioma-ingles{
     border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-radius: 5px 5px 0 0;
     padding-top: 5px;
     padding-bottom: 5px;
 }
@@ -444,6 +447,9 @@ input[type=email]:focus {
 
 .dados9_idioma-espanhol{
     border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+   
     padding-top: 5px;
     padding-bottom: 5px;
 }
@@ -451,6 +457,10 @@ input[type=email]:focus {
 
 .dados9_idioma-outro{
     border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom:  1px solid #ccc;;
+    border-radius:  0 0 5px 5px;
     padding-top: 5px;
     padding-bottom: 5px;
 }
@@ -490,6 +500,104 @@ padding-bottom: 5px;
 
 
 }
+
+    /* CONHECIMETNO PACOTE OFFICE */
+
+    .dados10{
+        margin-top: 5px;
+ 
+    }
+    .dados10_ofice{
+        margin-top: 10px;
+        border-top: 1px solid #ccc;
+        font-family: Roboto, Arial, "Droid Sans", Helvetica, Sans-serif;
+        font-size: 0.9em;
+        color: #495057;
+        padding-top: 10px;
+        padding-bottom: 5px;
+        padding-left: 3px;
+    }
+
+    .dados10_ofice-word{
+        border-top: 1px solid #ccc;
+        border-left: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        border-radius: 5px 5px 0 0;
+        margin-top: 5px;
+        padding-top: 3px;
+        padding-bottom: 5px;
+    }
+
+    .dados10_ofice-excel{
+        
+        border-left: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        border-radius: 0 0 5px 5px;
+       
+        padding-top: 3px;
+        padding-bottom: 5px;
+    }
+
+    #dadoslabel_sim-word, #dadoslabel_nao-word{
+        font-family: Roboto, Arial, "Droid Sans", Helvetica, Sans-serif;
+        font-size: 1.0em;
+        color: #495057;
+        margin-top: 10px;
+        padding-bottom: 5px;
+    }
+
+    #dadoslabel_sim-excel, #dadoslabel_nao-excel{
+        font-family: Roboto, Arial, "Droid Sans", Helvetica, Sans-serif;
+        font-size: 1.0em;
+        color: #495057;
+        margin-top: 10px;
+        padding-bottom: 5px;
+    }
+
+    #dados10label_word, #dados10label_excel{
+        font-family: Roboto, Arial, "Droid Sans", Helvetica, Sans-serif;
+        font-size: 0.9em;
+        color: #495057;
+    }
+
+   
+
+    .dados10_radioword{
+        display: none;
+    }
+    
+    /*EXIBIR MENU DE NÍVEL AO CLICAR NA CHECKBOX */
+    #dados10_word:checked ~ .dados10_radioword {
+        display: block;
+        margin-top: 10px;
+        font-family: Roboto, Arial, "Droid Sans", Helvetica, Sans-serif;
+        font-size: 0.8em;
+        color: #495057;
+    }
+
+    .dados10_radioexcel{
+        display: none;
+    }
+    
+    /*EXIBIR MENU DE NÍVEL AO CLICAR NA CHECKBOX */
+    #dados10_excel:checked ~ .dados10_radioexcel {
+        display: block;
+        margin-top: 10px;
+        font-family: Roboto, Arial, "Droid Sans", Helvetica, Sans-serif;
+        font-size: 0.8em;
+        color: #495057;
+    }
+
+.dados10_ofice-ofice1{
+    display: none;
+}
+
+.dados10_ofice-ofice{
+    display: block;
+}
+   
 
     /*EXIBIR MENU DE NÍVEL AO CLICAR NA CHECKBOX */
 #dados9_idiomaOutro:checked ~ .dados9_radioouttros {
@@ -966,8 +1074,8 @@ padding-bottom: 5px;
         color: #495057;
     }
     
-    .dados9_idioma{
-        
+    .dados9{
+      
     }
 
     .dados9_idioma-idiomas1{
@@ -1048,6 +1156,109 @@ padding-bottom: 5px;
    
    
     }
+
+.dados10_simnao-pergunta{
+    font-family: Roboto, Arial, "Droid Sans", Helvetica, Sans-serif;
+    font-size: 0.9em;
+    color: #495057;
+}
+    /* CONHECIMETNO PACOTE OFFICE */
+.dados10_ofice{
+    margin-top: 10px;
+    border-top: 1px solid #ccc;
+    font-family: Roboto, Arial, "Droid Sans", Helvetica, Sans-serif;
+    font-size: 0.9em;
+    color: #495057;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+
+.dados10_ofice-word{
+  border: 1px solid #cccd;
+  border-radius: 5px 0 0 5px;
+  margin-top: 3px;
+  padding-top: 5px;
+  width: 50%;
+    
+}
+
+.dados10_ofice-excel{
+    border-bottom: 1px solid #cccd;
+    border-right: 1px solid #cccd;
+    border-top: 1px solid #cccd;
+    border-radius: 0 5px 5px 0;
+    margin-top: 3px;
+    padding-top: 5px;
+    width: 50%;
+      
+  }
+
+  .dados10_ofice-ofice1{
+    display: none;
+}
+
+.dados10_ofice-ofice{
+    display: block;
+    display: flex;
+}
+
+#dados10_word{
+    margin-bottom: 10px;
+}
+
+#dados10label_word, #dados10label_excel{
+    font-family: Roboto, Arial, "Droid Sans", Helvetica, Sans-serif;
+    font-size: 0.9em;
+    color: #495057;
+    
+}
+
+
+
+.dados10_radioword{
+    display: none;
+}
+
+/*EXIBIR MENU DE NÍVEL AO CLICAR NA CHECKBOX */
+#dados10_word:checked ~ .dados10_radioword {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    font-family: Roboto, Arial, "Droid Sans", Helvetica, Sans-serif;
+    font-size: 0.8em;
+    color: #495057;
+}
+
+.dados10_radioexcel{
+    display: none;
+}
+
+/*EXIBIR MENU DE NÍVEL AO CLICAR NA CHECKBOX */
+#dados10_excel:checked ~ .dados10_radioexcel {
+    display: block;
+     display: flex;
+    flex-direction: column;
+    font-family: Roboto, Arial, "Droid Sans", Helvetica, Sans-serif;
+    font-size: 0.8em;
+    color: #495057;
+}
+
+
+
+
+#dadoslabel_sim-word, #dadoslabel_nao-word{
+
+    margin-top: 1px;
+}
+
+#dadoslabel_sim-excel, #dadoslabel_nao-excel{
+
+    margin-top: 1px;
+}
+
+
+
 
         /*EXIBIR MENU DE NÍVEL AO CLICAR NA CHECKBOX */
 #dados9_idiomaOutro:checked ~ .dados9_radioouttros {

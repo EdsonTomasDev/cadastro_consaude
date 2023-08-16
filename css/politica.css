@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, Arial, "Droid Sans", Helvetica, Sans-serif;
+ 
+}
+#politica{
+    margin: 0;
+    padding: 0;
+    background: #f0f0f0;
+}
+
+.privacidade{
+    width: 50%;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 20px;
+    background: #fff;
+}
+
+.privacidade p{
+    text-align: justify;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-size: 0.9em;
+}
+
+.privacidade h1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+   
+}
+
+.atualizacao{
+   display: block;
+   margin-bottom: 10px;
+   font-family: Roboto, Arial, "Droid Sans", Helvetica, Sans-serif;
+   font-size: 0.9em;
+}
+
+
+  /* /////////////////////////////////////////////////////////////////////////////////////*/
+/* ESTILO PARA QUANDO HOUVER REDUÇÃO DO TAMANHO DA TELA*/
+
+@media (max-width: 920px){
+
+    #politica{
+        margin: 0;
+        padding: 0;
+        background: #f0f0f0;
+    }
+    
+    .privacidade{
+        width: 85%;
+        margin: 0 auto;
+        border: 1px solid #ccc;
+        text-align: center;
+        padding: 10px;
+        background: #fff;
+    }
+    
+    .privacidade p{
+        text-align: justify;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        font-size: 0.9em;
+    }
+    
+    .privacidade h1{
+        margin-top: 10px;
+        margin-bottom: 10px;
+       
+    }
+    
+    .atualizacao{
+       display: block;
+       margin-bottom: 10px;
+       font-family: Roboto, Arial, "Droid Sans", Helvetica, Sans-serif;
+       font-size: 0.9em;
+    }
+ 
+}
+
+
+
